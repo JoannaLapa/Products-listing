@@ -1,6 +1,12 @@
 @use '../abstracts/variables' as v;
 @use '../abstracts/breakpoints' as b;
 
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .wrapper {
 	display: flex;
 	flex-direction: column;
@@ -8,3 +14,4 @@
 	padding: v.$padding-md 0;
 	max-width: 81.25rem;
 }
+
