@@ -1,0 +1,18 @@
+/// Mixin to manage responsive breakpoints
+/// @param {String} $breakpoint - Breakpoint name
+/// @require $breakpoints
+
+$breakpoints: (
+	'small': 31.25rem, //500px
+	'extra-large': 75rem, //1200px
+) !default;
+
+@mixin respond-to($breakpoint) {
+	@if map-has-key($breakpoints, $breakpoint) {
+		@media (min-width: map-get($breakpoints, $breakpoint)) {
+			@content;
+		}
+	} @else {
+		@warn 'Unfortunately no vlue can be retrievedfrom `#{$breakpoint}`.'+ 'Available breakpoints are: #{map-keys($breakpoints)}.';
+	}
+}

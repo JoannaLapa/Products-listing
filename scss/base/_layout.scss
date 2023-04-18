@@ -1,0 +1,10 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/breakpoints' as b;
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: v.$gap-xl;
+	padding: v.$padding-md 0;
+	max-width: 81.25rem;
+}
