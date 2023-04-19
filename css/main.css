@@ -1,0 +1,152 @@
+main {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  max-width: 81.25rem;
+  margin: 30px 0;
+}
+
+.list-box {
+  gap: 54px;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Box sizing rules, remove default margin and padding */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin, padding and adding font inherit */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body amd html defaults */
+html,
+body {
+  height: 100%;
+}
+
+/* Set core body defaults */
+body {
+  overflow-x: hidden;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  color: #232323;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: -0.05em;
+  text-align: center;
+}
+
+.sr-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
+
+.product-card {
+  align-items: center;
+  gap: 24px;
+  position: relative;
+}
+.product-card__icon {
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 4px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+.product-card__content {
+  justify-content: space-between;
+  min-height: 94px;
+}
+.product-card__description-box {
+  max-width: 200px;
+}
+.product-card__heading {
+  font-size: 1.3125rem;
+  line-height: 1.06;
+}
+.product-card__text {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.product-card__link {
+  color: #c39d5f;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  word-spacing: 2px;
+}
+.product-card__link:hover > .fa-arrow-right-long {
+  transform: translateX(20px);
+}
+
+.fa-arrow-right-long {
+  margin-left: 8px;
+  transition: 0.3s transform;
+  width: 14px;
+}/*# sourceMappingURL=main.css.map */
