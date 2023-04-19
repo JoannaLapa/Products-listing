@@ -1,5 +1,5 @@
 //FONT SIZES
-$fz-sm: .875rem;
+$fz-sm: 0.875rem;
 $fz-md: 1rem;
 $fz-xl: 1.3125rem;
 
@@ -8,24 +8,18 @@ $font-light: 300;
 
 
 //FONT-FAMILY
-$font-family: 'Montserrat', sans-serif;
+$font-family: 'Roboto', sans-serif;
 
 //COLORS
 $neutral-100: #ffffff;
 $primary-100: #232323;
 $primary-200: #c39d5f;
 
-//PADDINGS
-$padding-xs: 10px;
-$padding-sm: 14px;
-$padding-md: 28px;
-$padding-lg: 50px;
-$padding-xl: 86px;
+//MARGINS
+$margin-s: 30px;
 
 //GAPS
-$gap-xs: 4px;
-$gap-sm: 14px;
-$gap-md: 22px;
-$gap-lg: 34px;
-$gap-xl: 50px;
-$gap-xxl: 158px;
+$gap-xs: 4px; 
+$gap-sm: 14px; 
+$gap-md: 24px;
+$gap-xl: 54px;
