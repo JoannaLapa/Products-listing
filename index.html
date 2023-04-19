@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/42ae21866f.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Nazwa sklepu - sklep internetowy z modą damską</title>
     <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -17,20 +18,18 @@
 
         <div class="wrapper">
 
-            <section>
+            <article class="list-box flex-col">
 
                 <h1 class="sr-visually-hidden">Produkty z nowej kolekcji
                 </h1>
 
-                <ul class="list-box" role='list'>
+                <section class="product-card flex-col">
 
-                    <li class="product-card">
-
-                        <svg class="product-card__icon" version="1.0" xmlns="http://www.w3.org/2000/svg" width="24px"
-                            height="24px" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
-                            <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000"
-                                stroke="none">
-                                <path d="M1220 4763 c-459 -70 -834 -351 -1053 -788 -61 -123 -103 -244 -134 
+                    <svg class="product-card__icon" version="1.0" xmlns="http://www.w3.org/2000/svg" width="24px"
+                        height="24px" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+                        <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000"
+                            stroke="none">
+                            <path d="M1220 4763 c-459 -70 -834 -351 -1053 -788 -61 -123 -103 -244 -134 
                             -394 -23 -109 -26 -150 -27 -311 0 -156 3 -202 22 -290 65 -300 214 -605 445
                             -913 231 -307 611 -686 1002 -998 280 -224 696 -516 936 -658 137 -81 160 -82
                             285 -8 551 328 1231 868 1622 1287 453 486 692 894 779 1329 27 132 24 402 -5
@@ -38,32 +37,37 @@
                             -515 20 -161 -28 -357 -103 -484 -184 -156 -100 -323 -261 -418 -403 -29 -43
                             -55 -79 -58 -79 -3 0 -30 37 -60 83 -72 108 -260 296 -370 369 -165 109 -342
                             181 -526 213 -79 14 -316 19 -384 8z" />
-                            </g>
-                        </svg>
+                        </g>
+                    </svg>
 
-                        <picture>
-                            <source srcset="/img/dress_319x370.jpg" media="(max-width: 500px)">
-                            <source srcset="/img/dress_332x383.jpg" media="(min-width: 500px)">
-                            <img src="/img/dress_332x383.jpg" alt="Niebieski komplet sportowy">
-                        </picture>
+                    <picture>
+                        <source srcset="/img/dress_319x370.jpg" media="(max-width: 500px)">
+                        <source srcset="/img/dress_332x383.jpg" media="(min-width: 500px)">
+                        <img src="/img/dress_332x383.jpg" alt="Biała wiosenna sukienka">
+                    </picture>
 
-                        <div class="product-card__description-box">
+                    <div class="product-card__content flex-col">
+                        <hgroup class="product-card__description-box">
                             <h2 class="product-card__heading">YOUR SPRING LOOK</h2>
 
                             <p class="product-card__text">Daytime dressing pure&simple</p>
-                        </div>
+                        </hgroup>
 
-                        <a class="product-card__link" href="https://www.google.com/">SHOP NOW &#10142;</a>
+                        <a aria-label="Produkt: biała wiosenna sukienka" class="product-card__link"
+                            href="https://www.google.com/">
+                            SHOP NOW
+                            <i class="fa-sharp fa-solid fa-arrow-right-long"></i>
+                        </a>
+                    </div>
+                </section>
 
-                    </li>
+                <section class="product-card flex-col">
 
-                    <li class="product-card">
-
-                        <svg class="product-card__icon" version="1.0" xmlns="http://www.w3.org/2000/svg" width="24px"
-                            height="24px" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
-                            <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000"
-                                stroke="none">
-                                <path d="M1220 4763 c-459 -70 -834 -351 -1053 -788 -61 -123 -103 -244 -134 
+                    <svg class="product-card__icon" version="1.0" xmlns="http://www.w3.org/2000/svg" width="24px"
+                        height="24px" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+                        <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000"
+                            stroke="none">
+                            <path d="M1220 4763 c-459 -70 -834 -351 -1053 -788 -61 -123 -103 -244 -134 
                             -394 -23 -109 -26 -150 -27 -311 0 -156 3 -202 22 -290 65 -300 214 -605 445
                             -913 231 -307 611 -686 1002 -998 280 -224 696 -516 936 -658 137 -81 160 -82
                             285 -8 551 328 1231 868 1622 1287 453 486 692 894 779 1329 27 132 24 402 -5
@@ -71,31 +75,37 @@
                             -515 20 -161 -28 -357 -103 -484 -184 -156 -100 -323 -261 -418 -403 -29 -43
                             -55 -79 -58 -79 -3 0 -30 37 -60 83 -72 108 -260 296 -370 369 -165 109 -342
                             181 -526 213 -79 14 -316 19 -384 8z" />
-                            </g>
-                        </svg>
+                        </g>
+                    </svg>
 
-                        <picture>
-                            <source srcset="/img/business_319x370.jpg" media="(max-width: 500px)">
-                            <source srcset="/img/business_332x383.jpg" media="(min-width: 500px)">
-                            <img src="/img/business_332x383.jpg" alt="Niebieski komplet sportowy">
-                        </picture>
+                    <picture>
+                        <source srcset="/img/business_319x370.jpg" media="(max-width: 500px)">
+                        <source srcset="/img/business_332x383.jpg" media="(min-width: 500px)">
+                        <img src="/img/business_332x383.jpg" alt="Biały strój biznesowy">
+                    </picture>
 
-                        <div class="product-card__description-box">
+                    <div class="product-card__content flex-col">
+                        <hgroup class="product-card__description-box">
                             <h2 class="product-card__heading">MODERN BUSINESS OUTFIT</h2>
 
                             <p class="product-card__text">Smart casual for you</p>
-                        </div>
-                        <a class="product-card__link" href="https://www.google.com/">SHOP NOW &#10142;</a>
+                        </hgroup>
 
-                    </li>
+                        <a aria-label="Produkt: biały strój biznesowy" class="product-card__link"
+                            href="https://www.google.com/">
+                            SHOP NOW
+                            <i class="fa-sharp fa-solid fa-arrow-right-long"></i>
+                        </a>
+                    </div>
+                </section>
 
-                    <li class="product-card">
+                <section class="product-card flex-col">
 
-                        <svg class="product-card__icon" version="1.0" xmlns="http://www.w3.org/2000/svg" width="24px"
-                            height="24px" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
-                            <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000"
-                                stroke="none">
-                                <path d="M1220 4763 c-459 -70 -834 -351 -1053 -788 -61 -123 -103 -244 -134 
+                    <svg class="product-card__icon" version="1.0" xmlns="http://www.w3.org/2000/svg" width="24px"
+                        height="24px" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+                        <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000"
+                            stroke="none">
+                            <path d="M1220 4763 c-459 -70 -834 -351 -1053 -788 -61 -123 -103 -244 -134 
                             -394 -23 -109 -26 -150 -27 -311 0 -156 3 -202 22 -290 65 -300 214 -605 445
                             -913 231 -307 611 -686 1002 -998 280 -224 696 -516 936 -658 137 -81 160 -82
                             285 -8 551 328 1231 868 1622 1287 453 486 692 894 779 1329 27 132 24 402 -5
@@ -103,26 +113,30 @@
                             -515 20 -161 -28 -357 -103 -484 -184 -156 -100 -323 -261 -418 -403 -29 -43
                             -55 -79 -58 -79 -3 0 -30 37 -60 83 -72 108 -260 296 -370 369 -165 109 -342
                             181 -526 213 -79 14 -316 19 -384 8z" />
-                            </g>
-                        </svg>
+                        </g>
+                    </svg>
 
-                        <picture>
-                            <source srcset="/img/street_319x370.jpg" media="(max-width: 500px)">
-                            <source srcset="/img/street_339x383.jpg" media="(min-width: 500px)">
-                            <img src="/img/street_339x383.jpg" alt="Niebieski komplet sportowy">
-                        </picture>
+                    <picture>
+                        <source srcset="/img/street_319x370.jpg" media="(max-width: 500px)">
+                        <source srcset="/img/street_339x383.jpg" media="(min-width: 500px)">
+                        <img src="/img/street_339x383.jpg" alt="Niebieski komplet sportowy">
+                    </picture>
 
-                        <div class="product-card__description-box">
+                    <div class="product-card__content flex-col">
+                        <hgroup class="product-card__description-box">
                             <h2 class="product-card__heading">NEW STREET STYLE</h2>
 
                             <p class="product-card__text">Discover the art of outdoor</p>
-                        </div>
+                        </hgroup>
 
-                        <a class="product-card__link" href="https://www.google.com/">SHOP NOW &#10142;</a>
-
-                    </li>
-                </ul>
-            </section>
+                        <a aria-label="Produkt: niebieski komplet sportowy" class="product-card__link"
+                            href="https://www.google.com/">
+                            SHOP NOW
+                            <i class="fa-sharp fa-solid fa-arrow-right-long"></i>
+                        </a>
+                    </div>
+                </section>
+            </article>
     </main>
 </body>
 
