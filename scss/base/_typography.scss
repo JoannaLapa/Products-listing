@@ -1,10 +1,10 @@
 @use '../abstracts/variables' as v;
 
 body {
-	font-family: v.$font-family;
-	font-weight: v.$font-bold;
-	letter-spacing: -0.05em;
 	color: v.$primary-100;
+	font-family: v.$font-family;
+	letter-spacing: -0.05em;
+	text-align: center;	
 }
 
 .sr-visually-hidden {
