@@ -2,16 +2,22 @@
 @use '../abstracts/breakpoints' as b;
 
 main {
+	align-items: center;
 	display: flex;
 	justify-content: center;
-	align-items: center;
 }
 
 .wrapper {
 	display: flex;
-	flex-direction: column;
-	gap: v.$gap-xl;
-	padding: v.$padding-md 0;
 	max-width: 81.25rem;
+	margin: v.$margin-s 0;
 }
 
+.list-box {
+	gap: v.$gap-xl;
+}
+
+.flex-col {
+	display: flex;
+	flex-direction: column;
+}
