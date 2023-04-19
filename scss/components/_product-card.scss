@@ -2,8 +2,11 @@
 
 .product-card {
     align-items: center;
-    gap: v.$gap-md;
-    position: relative;
+    // gap: v.$gap-md;
+
+    &__img-box {
+        position: relative;
+    }
 
 &__icon {
     background-color: v.$neutral-100;
@@ -14,13 +17,8 @@
     top: 15px;
 }
 
-&__content {
-    justify-content: space-between;
-    min-height: 94px;
-}
-
 &__description-box {
-    max-width: 200px;
+    max-width: 12.5rem;
 }
 
 &__heading {
@@ -38,7 +36,7 @@
     cursor: pointer;
     font-size: v.$fz-sm;
     font-weight: 700;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.09em;
     text-decoration: none;
     word-spacing: 2px;
 

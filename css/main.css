@@ -7,11 +7,15 @@ main {
 .wrapper {
   display: flex;
   max-width: 81.25rem;
-  margin: 30px 0;
+  margin: 30px 20px;
 }
 
-.list-box {
-  gap: 54px;
+.gap-y-6 {
+  gap: 24px;
+}
+
+.gap-y-8 {
+  gap: 28px;
 }
 
 .flex-col {
@@ -19,6 +23,22 @@ main {
   flex-direction: column;
 }
 
+.mx-7 {
+  margin-block: 26px;
+}
+
+@media (min-width: 31.25rem) {
+  .flex-row-sm {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .flex-reverse-sm {
+    flex-direction: column-reverse;
+  }
+  .wrapper {
+    margin: 30px 44px;
+  }
+}
 /* Box sizing rules, remove default margin and padding */
 *,
 *::before,
@@ -92,7 +112,8 @@ body {
 
 .product-card {
   align-items: center;
-  gap: 24px;
+}
+.product-card__img-box {
   position: relative;
 }
 .product-card__icon {
@@ -103,12 +124,8 @@ body {
   right: 15px;
   top: 15px;
 }
-.product-card__content {
-  justify-content: space-between;
-  min-height: 94px;
-}
 .product-card__description-box {
-  max-width: 200px;
+  max-width: 12.5rem;
 }
 .product-card__heading {
   font-size: 1.3125rem;
@@ -123,7 +140,7 @@ body {
   cursor: pointer;
   font-size: 0.875rem;
   font-weight: 700;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.09em;
   text-decoration: none;
   word-spacing: 2px;
 }

@@ -10,14 +10,37 @@ main {
 .wrapper {
 	display: flex;
 	max-width: 81.25rem;
-	margin: v.$margin-s 0;
+	margin: v.$margin-s v.$margin-xs;
 }
 
-.list-box {
-	gap: v.$gap-xl;
+.gap-y-6 {
+	gap: v.$gap-6;
+}
+
+.gap-y-8 {
+	gap: v.$gap-8;
 }
 
 .flex-col {
 	display: flex;
 	flex-direction: column;
 }
+
+.mx-7 {
+	margin-block: 26px;
+}
+
+@include b.respond-to('small') {
+.flex-row-sm {
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.flex-reverse-sm {
+	flex-direction: column-reverse;
+}
+
+.wrapper {
+	margin: v.$margin-s v.$margin-md;
+}
+	}
