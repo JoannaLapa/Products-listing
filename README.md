@@ -1,1 +1,1 @@
-# recruitment-task for MediaAmbassador
+# recruitment-task
