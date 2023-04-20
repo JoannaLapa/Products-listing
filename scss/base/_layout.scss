@@ -1,46 +1,85 @@
 @use '../abstracts/variables' as v;
 @use '../abstracts/breakpoints' as b;
 
-main {
-	align-items: center;
-	display: flex;
-	justify-content: center;
-}
-
 .wrapper {
+	max-width: 68.75rem;
+	margin: v.$margin-8 v.$margin-5;
+}
+
+/*DISPLAY, DIRECTION*/
+
+.flex {
 	display: flex;
-	max-width: 81.25rem;
-	margin: v.$margin-s v.$margin-xs;
-}
-
-.gap-y-6 {
-	gap: v.$gap-6;
-}
-
-.gap-y-8 {
-	gap: v.$gap-8;
 }
 
 .flex-col {
-	display: flex;
 	flex-direction: column;
 }
 
-.mx-7 {
-	margin-block: 26px;
+/*GAPS*/
+
+.gap-1 {
+	gap: v.$gap-1;
+}
+
+.gap-8 {
+	gap: v.$gap-8;
+}
+
+/*ALIGNMENT*/
+
+.items-center {
+	align-items: center;
+}
+
+.justify-between {
+	justify-content: space-between;
 }
 
 @include b.respond-to('small') {
-.flex-row-sm {
-	flex-direction: row;
-	flex-wrap: wrap;
-}
-
-.flex-reverse-sm {
-	flex-direction: column-reverse;
-}
-
-.wrapper {
-	margin: v.$margin-s v.$margin-md;
-}
+	.wrapper {
+		margin: v.$margin-7;
 	}
+
+	/*DISPLAY, DIRECTION*/
+
+	.flex-row-sm {
+		flex-direction: row;
+	}
+
+	.flex-reverse-sm {
+		flex-direction: column-reverse;
+	}
+
+	.flex-wrap-sm {
+		flex-wrap: wrap;
+	}
+
+	/*GAPS*/
+
+	.gap-4-sm {
+		gap: v.$gap-4;
+	}
+
+	.gap-9-sm {
+		gap: v.$gap-9;
+	}
+
+	.gap-12-sm {
+		gap: v.$gap-12;
+	}
+
+	/*ALIGNMENT*/
+
+	.justify-center-sm {
+		justify-content: center;
+	}
+
+	.self-start-sm {
+		align-self: flex-start;
+	}
+
+	.self-end-sm {
+		align-self: flex-end;
+	}
+}

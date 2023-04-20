@@ -3,8 +3,9 @@
 body {
 	color: v.$primary-100;
 	font-family: v.$font-family;
+	font-weight: v.$font-light;
 	letter-spacing: -0.05em;
-	text-align: center;	
+	text-align: center;
 }
 
 .sr-visually-hidden {

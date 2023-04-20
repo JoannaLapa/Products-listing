@@ -1,53 +1,90 @@
 @use '../abstracts/variables' as v;
+@use '../abstracts/breakpoints' as b;
 
 .product-card {
-    align-items: center;
-    // gap: v.$gap-md;
+	min-height: 30.625rem;
 
-    &__img-box {
-        position: relative;
-    }
+	&__img-box {
+		position: relative;
+	}
 
-&__icon {
-    background-color: v.$neutral-100;
-    border-radius: 50%;
-    padding: 4px;
-    position: absolute;
-    right: 15px;
-    top: 15px;
-}
+	&__icon {
+		background-color: v.$neutral-100;
+		border-radius: 50%;
+		padding: v.$padding-1;
+		position: absolute;
+		right: 15px;
+		top: 15px;
+	}
 
-&__description-box {
-    max-width: 12.5rem;
-}
+	&__content-container {
+		min-height: 8.375rem;
+	}
 
-&__heading {
-    font-size: v.$fz-xl;
-    line-height: 1.06;
-}
+	&__content {
+		min-height: 5.75rem;
+	}
 
-&__text {
-    font-size: v.$fz-md;
-    line-height: 1.6;
-}
+	&__description-box {
+		max-width: 12.5rem;
+		min-height: 2.625rem;
+	}
 
-&__link {
-    color: v.$primary-200;
-    cursor: pointer;
-    font-size: v.$fz-sm;
-    font-weight: 700;
-    letter-spacing: 0.09em;
-    text-decoration: none;
-    word-spacing: 2px;
+	&__heading {
+		font-size: v.$fz-xl;
+		line-height: 1;
+	}
 
-    &:hover > .fa-arrow-right-long {
-        transform: translateX(20px);
-           }    
-}
+	&__text {
+		font-size: v.$fz-md;
+		line-height: 1.6;
+	}
+
+	&__link {
+		color: v.$primary-200;
+		cursor: pointer;
+		font-size: v.$fz-sm;
+		font-weight: v.$font-bold;
+		letter-spacing: 0.09em;
+		text-align: center;
+		text-decoration: none;
+		word-spacing: 0.125em;
+
+		&:hover > .fa-arrow-right-long {
+			transform: translateX(20px);
+		}
+	}
 }
 
 .fa-arrow-right-long {
-    margin-left: 8px;
-    transition: 0.3s transform;
-    width: 14px;
+	margin-left: v.$margin-1;
+	transition: 0.3s transform;
+	width: 0.875rem;
+}
+
+@include b.respond-to('small') {
+	.product-card {
+		min-height: 33.125rem;
+
+		&__content-container {
+			min-height: 6.25rem;
+		}
+
+		&__content {
+			min-height: 4.375rem;
+		}
+
+		&__heading {
+			font-size: v.$fz-md;
+		}
+
+		&__text {
+			font-size: v.$fz-sm;
+			line-height: 2.4;
+		}
+
+		&__link {
+			font-size: v.$fz-xs;
+		}
+	}
 }
