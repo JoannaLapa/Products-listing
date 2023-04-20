@@ -32,9 +32,9 @@ I assump that:
 
 ## Screenshots
 
-![](./screenshots/desktop.png)
+![](./screenshots/desktop.jpg)
 
-![](./screenshots/mobile.png)
+![](./screenshots/mobile.jpg)
 
 
 ## My process
