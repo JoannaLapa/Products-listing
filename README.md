@@ -8,12 +8,12 @@ This is a solution for recruitment task based on provided instructions and mocku
 
 # Table of contents
 
-    - [Overview & assumptions](#overview--assumptions)
-    - [Screenshots](#screenshots)
-    - [My process](#my-process)
-        - [Built with](#built-with)
-        - [Useful resources used during the implementation](#useful-resources-used-during-the-implementation)
-    ## Author
+- [Overview & assumptions](#overview--assumptions)
+- [Screenshots](#screenshots)
+- [My process](#my-process)
+    - [Built with](#built-with)
+    - [Useful resources used during the implementation](#useful-resources-used-during-the-implementation)
+- [Author](#author)
 
 ## Overview & assumptions
 
@@ -32,9 +32,10 @@ I assump that:
 
 ## Screenshots
 
+![](./screenshots/desktop.png)
+
 ![](./screenshots/mobile.png)
 
-![](./screenshots/desktop.png)
 
 ## My process
 
