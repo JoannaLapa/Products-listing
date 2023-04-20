@@ -2,7 +2,7 @@ Recruitment task
 
 # Links:
 
-    #Live Site URL: https://joannalapa.github.io/Products-listing/
+- Live Site URL: [https://joannalapa.github.io/Products-listing/](https://joannalapa.github.io/Products-listing/)
 
 This is a solution for recruitment task based on provided instructions and mockup.
 
