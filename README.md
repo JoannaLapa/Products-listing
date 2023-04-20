@@ -27,10 +27,11 @@ Icon dimansions and positioning:
 
 I assump that: 
 
-- 20px witdh is for a heart and with background-color it is total 28px; 
-- as an origin to move the heart icon I took the middle of it - from the top and right corner of the picture to the middle of a heart is 30px.
+- 20px width is for a heart and with background-color it is total 28px; 
+- as an origin to move the heart icon I took the middle of it - from the top and the right corner of the picture to the middle of the heart is 30px.
+- icon is only an icon as it was not provided in instructions any role for it. It looks like a button with aria-role "Add to favourite", normally I would ask about that and change the html structure with button tag.
 
-I kept the provided font sizes for mobile design and changed to smaller for desktop according to the mockup look.
+I kept the provided font sizes for mobile design and changed to smaller for desktop design according to mockup look.
 
 ## Screenshots
 
@@ -46,6 +47,7 @@ I kept the provided font sizes for mobile design and changed to smaller for desk
     Semantic HTML5 markup
     SCSS
     Flexbox
+    Grid
     Mobile-first workflow
 
 ### Useful resources used during the implementation:

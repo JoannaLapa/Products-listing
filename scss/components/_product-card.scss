@@ -1,11 +1,9 @@
 @use '../abstracts/variables' as v;
-@use '../abstracts/breakpoints' as b;
 
 .product-card {
-	min-height: 30.625rem;
-
 	&__img-box {
 		position: relative;
+		width: 100%;
 	}
 
 	&__icon {
@@ -13,7 +11,7 @@
 		border-radius: 50%;
 		padding: v.$padding-1;
 		position: absolute;
-		right:16px;
+		right: 16px;
 		top: 16px;
 	}
 
@@ -62,10 +60,8 @@
 	width: 0.875rem;
 }
 
-@include b.respond-to('small') {
+@media screen and (min-width: v.$small) {
 	.product-card {
-		min-height: 33.125rem;
-
 		&__content-container {
 			min-height: 6.25rem;
 		}

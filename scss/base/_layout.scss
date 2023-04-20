@@ -1,9 +1,8 @@
 @use '../abstracts/variables' as v;
-@use '../abstracts/breakpoints' as b;
 
 .wrapper {
 	margin: v.$margin-8 v.$margin-5;
-	max-width: 68.75rem;
+	max-width: 67.5rem;
 }
 
 /*DISPLAY, DIRECTION*/
@@ -14,6 +13,14 @@
 
 .flex-col {
 	flex-direction: column;
+}
+
+.grid {
+	display: grid;
+}
+
+.grid-cols-1 {
+	grid-template-rows: 1fr;
 }
 
 /*GAPS*/
@@ -40,50 +47,54 @@
 	justify-content: space-between;
 }
 
-@include b.respond-to('small') {
-	.wrapper {
-		margin: v.$margin-7;
-	}
+@media screen and (min-width: v.$small) {
+	/*DISPLAY, DIRECTION, GRID-TEMPLATE*/
 
-	/*DISPLAY, DIRECTION*/
-
-	.flex-row-sm {
-		flex-direction: row;
-	}
-
-	.flex-reverse-sm {
-		flex-direction: column-reverse;
-	}
-
-	.flex-wrap-sm {
-		flex-wrap: wrap;
+	.grid-cols-2-sm {
+		grid-template-columns: 1fr 1fr;
 	}
 
 	/*GAPS*/
 
-	.gap-4-sm {
-		gap: v.$gap-4;
+	.gap-2-sm {
+		gap: v.$gap-2;
+	}
+}
+
+@media screen and (min-width: v.$medium) {
+	.grid-cols-3-md {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+@media screen and (min-width: v.$large) {
+	.wrapper {
+		margin: v.$margin-7;
 	}
 
-	.gap-9-sm {
+	/*DISPLAY, DIRECTION, GRID-TEMPLATE*/
+
+	.flex-reverse-lg {
+		flex-direction: column-reverse;
+	}
+
+	/*GAPS*/
+
+	.gap-9-lg {
 		gap: v.$gap-9;
 	}
 
-	.gap-12-sm {
+	.gap-12-lg {
 		gap: v.$gap-12;
 	}
 
 	/*ALIGNMENT*/
 
-	.justify-center-sm {
-		justify-content: center;
-	}
-
-	.self-start-sm {
-		align-self: flex-start;
-	}
-
-	.self-end-sm {
+	.self-end-lg {
 		align-self: flex-end;
+	}
+
+	.self-start-lg {
+		align-self: flex-start;
 	}
 }
