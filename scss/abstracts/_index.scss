@@ -2,10 +2,10 @@
 @forward 'breakpoints';
 @forward 'variables';
 
-// 2. Base stuff
+//2. Components
+@forward '../components/product-card';
+
+//3. Base stuff
 @forward '../base/layout';
 @forward '../base/reset';
 @forward '../base/typography';
-
-//3. Components
-@forward '../components/product-card';
