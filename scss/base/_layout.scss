@@ -2,8 +2,8 @@
 @use '../abstracts/breakpoints' as b;
 
 .wrapper {
-	max-width: 68.75rem;
 	margin: v.$margin-8 v.$margin-5;
+	max-width: 68.75rem;
 }
 
 /*DISPLAY, DIRECTION*/
