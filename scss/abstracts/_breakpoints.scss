@@ -3,8 +3,10 @@
 /// @require $breakpoints
 
 $breakpoints: (
-	'small': 31.25rem, //500px
-	'extra-large': 75rem, //1200px
+	'small': 31.25rem,
+	//500px
+	'extra-large': 75rem,
+	//1200px
 ) !default;
 
 @mixin respond-to($breakpoint) {
