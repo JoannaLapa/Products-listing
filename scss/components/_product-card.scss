@@ -3,8 +3,20 @@
 .product-card {
 	&__img-box {
 		position: relative;
-		max-width: 100%;
-		height: auto;
+		transition: border, transform 0.3s;
+		width: 100%;
+
+		&:hover {
+			transform: scale(1.02);
+		}
+	}
+
+	&__img {
+		width: 100%;
+	}
+
+	&__img-link {
+		width: 100%;
 	}
 
 	&__icon {
@@ -32,6 +44,7 @@
 	&__heading {
 		font-size: v.$fz-xl;
 		line-height: 1;
+		text-decoration: none;
 	}
 
 	&__text {

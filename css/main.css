@@ -1,7 +1,16 @@
 .product-card__img-box {
   position: relative;
-  max-width: 100%;
-  height: auto;
+  transition: border, transform 0.3s;
+  width: 100%;
+}
+.product-card__img-box:hover {
+  transform: scale(1.02);
+}
+.product-card__img {
+  width: 100%;
+}
+.product-card__img-link {
+  width: 100%;
 }
 .product-card__icon {
   background-color: #ffffff;
@@ -24,6 +33,7 @@
 .product-card__heading {
   font-size: 1.3125rem;
   line-height: 1;
+  text-decoration: none;
 }
 .product-card__text {
   font-size: 1rem;
