@@ -20,6 +20,12 @@
   right: 16px;
   top: 16px;
 }
+.product-card__icon g {
+  transition: fill 0.3s;
+}
+.product-card__icon g:hover {
+  fill: #c39d5f;
+}
 .product-card__content-container {
   min-height: 8.375rem;
 }

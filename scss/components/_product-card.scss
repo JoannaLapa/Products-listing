@@ -26,6 +26,14 @@
 		position: absolute;
 		right: 16px;
 		top: 16px;
+
+		g {
+			transition: fill 0.3s;
+		}
+
+		g:hover {
+			fill: v.$primary-200;
+		}
 	}
 
 	&__content-container {
