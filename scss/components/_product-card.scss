@@ -19,13 +19,17 @@
 		width: 100%;
 	}
 
-	&__icon {
+	&__btn-fav {
 		background-color: v.$neutral-100;
+		border: none;
 		border-radius: 50%;
-		padding: v.$padding-1;
 		position: absolute;
 		right: 16px;
 		top: 16px;
+	}
+
+	&__icon {
+		padding: v.$padding-1;
 
 		g {
 			transition: fill 0.3s;
@@ -74,6 +78,10 @@
 			transform: translateX(20px);
 		}
 	}
+}
+
+.gold {
+	fill: v.$primary-200;
 }
 
 .fa-arrow-right-long {
