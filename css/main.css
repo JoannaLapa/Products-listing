@@ -73,7 +73,7 @@
   width: 0.875rem;
 }
 
-@media screen and (min-width: 31.25rem) {
+@media screen and (min-width: 40rem) {
   .product-card__content-container {
     min-height: 6.25rem;
   }
@@ -135,7 +135,7 @@
   justify-content: space-between;
 }
 
-@media screen and (min-width: 31.25rem) {
+@media screen and (min-width: 40rem) {
   /*DISPLAY, DIRECTION, GRID-TEMPLATE*/
   .grid-cols-2-sm {
     grid-template-columns: 1fr 1fr;
